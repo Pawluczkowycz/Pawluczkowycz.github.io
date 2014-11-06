@@ -71,6 +71,7 @@ img {
 
 img:hover {
 	border: 5px solid #ccc;
+	opacity: 0.4;
 }
 
 figure {
@@ -79,18 +80,46 @@ figure {
 }
 
 figcaption {
-	position: absolute;
-	top: 60%;
-	left: 0;
 	background-color: #4584AC;
 	color: #fff;
 	font-family: 'Lato', sans-serif;
-	height: 40%;
 	width: 100%;
 	text-align: center;
-	opacity: 0;
 }
 
-figure:hover figcaption {
+.figure__overlay {
+	background-color: rgba(249, 249, 249, 0.7);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.figure__overlay-h3 {
+	margin-top: 5em;
+}
+
+figure:hover .figure__overlay {
 	opacity: 1;
+	transition: all 1s ease;
+}
+
+.figure__h4 {
+	color: #eee;
+	margin: 0;
+	padding-top: 1em;
+}
+
+.figure__h5 {
+	font-weight: 400;
+	margin-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+.figure__link {
+	color: #4584ac;
+	text-shadow: 1px 1px 0 #111;
 }
