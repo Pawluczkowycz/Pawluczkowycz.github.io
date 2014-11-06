@@ -61,15 +61,16 @@ header { text-align: center;}
 /* Main */
 .grid-pad--sixtysixPercent {
 	margin: 0 auto;
+	overflow: hidden;
 	position: relative;
 	width: 66%;
 }
 p { font-family: 'Lato', sans-serif;}
-img {
+.image--small {
 	border: 5px solid #eee;
 }
 
-img:hover {
+.image--small:hover {
 	border: 5px solid #ccc;
 }
 
@@ -93,4 +94,11 @@ figcaption {
 
 figure:hover figcaption {
 	opacity: 1;
+}
+
+/* INDIVIDUAL DESIGNS PAGES */
+.image--large {
+	border: 1px solid #555;
+	box-shadow: 0 0 10px 1px #555;
+	margin: 10px;
 }
