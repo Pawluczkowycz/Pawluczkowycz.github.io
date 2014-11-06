@@ -65,11 +65,11 @@ header { text-align: center;}
 	width: 66%;
 }
 p { font-family: 'Lato', sans-serif;}
-img {
+.image--small {
 	border: 5px solid #eee;
 }
 
-img:hover {
+.image--small:hover {
 	border: 5px solid #ccc;
 	opacity: 0.4;
 }
@@ -122,4 +122,11 @@ figure:hover .figure__overlay {
 .figure__link {
 	color: #4584ac;
 	text-shadow: 1px 1px 0 #111;
+}
+
+/*  INDIVIDUAL DESIGN PAGES  */
+.image--large {
+	border: 1px solid #555;
+	box-shadow: 0 0 10px 0 #555;
+	margin: 0 13px;
 }
