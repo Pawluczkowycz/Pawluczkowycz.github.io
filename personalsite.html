@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio of Andrew Pawluczkowycz</title>
+        <meta name="description" content="portfolio, web design, interface, ui, graphic design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/andrew.css">
+		<link rel="stylesheet" href="css/mediaqueries.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:800,400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="thadCss/main.css">
+		<link rel="stylesheet" href="thadCss/andrew.css">
+		<link rel="stylesheet" href="thadCss/mediaqueries.css">
+        <script src="js/modernizr-2.5.3-min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+			<header class="grid-pad" id="home">
+				<div class="col-1-1">
+					<h1 id="h1-main">Andrew W. Pawluczkowycz</h1>
+					<h2>Visual Design for Communication </h2>
+					<nav role="navigation">
+						<ul class="header__nav-ul">
+							<li><a href="index.html" class="header__a">WORK</a></li>
+							<li><a href="about.html" class="header__a">ABOUT</a></li>
+							<li><a href="contact.html" class="header__a">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>	
+			
+			<div class="grid-pad--sixtysixPercent">
+				<section class="col-1-1">
+					<h3>Personal Website Mockup</h3>
+					<p>
+					</p>
+
+				</section>
+				<div class="col-1-1">
+					<div id="wrapper2">
+						<header class="grid-pad">				
+							<h1>Thaddeus Russell</h1>
+							<h2>Historian and Cultural Critic</h2>
+						</header>
+			
+						<h3>Praise for<br id="lineBreak"> <span>A Renegade History of the United States</span></h3>
+			
+						<div class="quotesDiv">
+							<p class="quotes">"Raucous, profane, and thrillingly original, Thaddeus Russell's A Renegade History of the United States turns the myths of the 'American character' on their heads with a rare mix of wit, scholarship, and storytelling flair."<span> - Steven Johnson, author of Everything Bad is Good for You and The Invention of Air</span></p>
+							<p class="quotes">"Thaddeus Russell’s A Renegade History of The United States is a work of history like no other — a bold, controversial, original view of American history that will amuse, inspire, outrage, and most of all instruct readers. Russell strips away conventional wisdom and explodes many myths. In the process, he sheds new light on ideas, institutions, and people."<span>  - Alan Brinkley, Columbia University, author of The Publisher: Henry Luce and His American Century and American History: A Survey</span></p>
+							<p class="quotes">"This lively, contrarian work [is] . . . A sharp, lucid, 	entertaining view of the 'bad' American past." <span> - Kirkus Reviews, starred review ("assigned to books of unusual merit")</span></p>
+							<p class="quotes">"Fascinating in content and style." <span> - Publishers Weekly</span></p>
+							<p class="quotes">"Thaddeus Russell is a trouble-maker for sure. Whether you call his book courageous or outrageous, his helter-skelter tour through the American past will make you gasp and make you question—as he does—the writing of 'history as usual.'" <span> - Nancy Cott, Harvard University, author of The Grounding of Modern Feminism</span></p>
+							<p class="quotes">"Calling into question our assumptions about liberty, democracy and the founding of the US, this book tells how drunkards, prostitutes, 'shiftless' slaves and white slackers, criminals and other outsiders shaped society. It is revisionist history at its best." <span> - The Guardian</span></p>
+							<p class="quotes">"Fascinating ideas that make my head spin." <span> - John Stossel, on the "Stossel" show, Fox Business Network</span></p>
+							<p class="quotes">"A Renegade History of the United States takes us on a tour of backstreet America, introducing us to the rebels and prostitutes, the hipsters and hippies. The book tells good stories, all in the cause of illuminating larger historical struggles between social control and freedom, repression and letting go. Author Thaddeus Russell gives us a new pantheon of American heroes, and argues that those who expanded the realm of desire—for sex, for drugs, for illicit experiences—were the very ones who created our liberties. This is a controversial book, but certainly not a dull one." <span>  - Elliott Gorn, Brown University, author of Dillinger's Wild Ride: The Year That Made America's Public Enemy Number One </span></p>
+						</div>
+			
+						<nav>
+							<ul class="header__nav-ul">
+								<li><a href="https://twitter.com/thaddeusrussell" class="header__a" target="_blank"><i class="fa fa-twitter"></i> twitter</a></li>
+								<li><a href="#" class="header__a"><i class="fa fa-envelope"></i> email</a></li>
+								<li><a href="http://www.amazon.com/Thaddeus-Russell/e/B003AB0BAK/ref=dp_byline_cont_pop_book_1" class="header__a"  target="_blank"><i class="fa fa-book"></i> books</a></li>
+							</ul>
+						</nav>				
+					</div>		
+				</div>
+				<div class="grid-pad">
+					<button class="btn--floatRight"><a href="#home">TOP</a></button>
+				</div>
+			</div>			
+		</div>
+		<script src="js/jquery-1.7.2.min.js"></script>
+        <script>
+			$(document).ready(function() {
+				
+				var $quotes = $('.quotes');
+				var $quoteIndex = -1;
+				
+				function showNextQuote() {
+					++$quoteIndex;
+					$quotes.eq($quoteIndex % $quotes.length)
+						.fadeIn(2000)
+						.delay(6000)
+						.fadeOut(3000, showNextQuote);
+				}
+				
+				showNextQuote();
+				
+			});
+		</script>	
+    </body>
+</html>

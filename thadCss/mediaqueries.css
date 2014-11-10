@@ -1,0 +1,49 @@
+@media all and (max-width: 1129px) and (min-width: 960px) {
+	.quotes {
+		width: 80%;
+	}
+	.quotesDiv {
+		height: 190px;
+	}
+}
+
+@media all and (max-width: 959px) {
+	h1 {
+		font-size: 4em;
+	}
+	h2 {
+		font-size: 1.25em;
+	}
+	.quotes {
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 767px) {
+	header {
+		height: 50%;
+	}
+	h1 {
+		margin-top: 5%;
+	}
+
+}
+
+@media all and (max-width: 480px) {
+
+	header.grid-pad {
+		height: auto;
+		padding-top: 50px;
+		position: relative;
+	}
+	h1 {
+		font-size: 2em;;
+	}
+	#lineBreak {
+		display: block;
+	}
+	nav {
+		position: absolute;
+		top: 0;
+	}
+}
