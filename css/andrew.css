@@ -1,14 +1,40 @@
 /*  Header */
-.triangle {
+.triangle,
+.triangle--red,
+.triangle--blue,
+.triangle--orange,
+.triangle--pink ,
+.triangle--olive {
 	height: 0;
 	width: 0;
-	border: 70px solid transparent;
-	border-left: 70px solid #333;
-	border-top: 70px solid #333;
+	border: 3em solid transparent;
+	border-left: 3em solid #333;
+	border-top: 3em solid #333;
 	display: inline-block;
 	position: absolute;
 }
-h1 {
+.triangle--red {
+	border-left: 3em solid #85144b;
+	border-top: 3em solid #85144b;
+}
+.triangle--blue {
+	border-left: 3em solid #0074d9;
+	border-top: 3em solid #0074d9;
+}
+.triangle--orange {
+	border-left: 3em solid #ff851b;
+	border-top: 3em solid #ff851b;
+}
+.triangle--pink {
+	border-left: 3em solid #f012be;
+	border-top: 3em solid #f012be;
+}
+.triangle--olive {
+	border-left: 3em solid #3d9970;
+	border-top: 3em solid #3d9970;
+}
+h1,
+#h1-main {
 	color: #4584AC;
 	font-family: 'Lato', sans-serif;
 	font-size: 3em;
@@ -37,7 +63,13 @@ h4 {
 	color: #4584AC;
 }
 
-header { text-align: center;}
+header {
+	text-align: center;
+}
+
+.header--alignLeft {
+	text-align: left;
+}
 
 .header__nav-ul {
 	list-style: none;
@@ -77,6 +109,9 @@ header { text-align: center;}
 	float: right;
 	padding: 0.5em;
 	text-decoration: none;
+}
+.btn--floatRight:hover {
+	border-color: #414BB9;
 }
 .btn--floatRight a {
 	padding: 1em;
@@ -162,7 +197,7 @@ figure:hover .figure__overlay {
 
 /*  INDIVIDUAL DESIGN PAGES  */
 .image--large {
-	border: 1px solid #333;
+	border: 1px solid #888;
 	box-shadow: 0 0 10px 0 #555;
 	margin: 0 13px;
 }
