@@ -14,7 +14,15 @@
 		padding-top: 0;
 		width: 95%;
 	}
+	.grid-pad--sixtysixPercent {
+	margin: 0 5px;
+	width: 100%;
+}
 	h1 { font-size: 2.5em;}
 	h2 { font-size: 1.25em;}
 	.header__nav-ul li { margin: 0;}
+	
+	.image--large {
+		margin: 0 5px;
+	}
 }
