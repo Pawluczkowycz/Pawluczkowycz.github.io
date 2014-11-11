@@ -138,6 +138,7 @@ p {
 }
 .image--small {
 	border: 5px solid #eee;
+	max-width: 600px;
 }
 
 .image--small:hover {
@@ -200,4 +201,5 @@ figure:hover .figure__overlay {
 	border: 1px solid #888;
 	box-shadow: 0 0 10px 0 #555;
 	margin: 0 13px;
+	max-width: 1200px;
 }
