@@ -146,6 +146,11 @@ p {
 	opacity: 0.4;
 }
 
+.image--small-large {
+	border: 5px solid #eee;
+	max-width: 600px;
+}
+
 figure {
 	margin: 0;
 	position: relative;

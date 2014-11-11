@@ -45,6 +45,7 @@ body {
 	float: left;
 	padding-bottom: 20px;
 	padding-right: 20px;
+	position: relative;
 }
 
 .col-1-1 { width: 100%;}
