@@ -1,12 +1,17 @@
-@media all and (max-width: 1129px) and (min-width: 960px) {
-}
-
-@media all and (max-width: 959px) {
+@media all and (max-width: 1129px) {
+	.grid-pad--sixtysixPercent {
+		width: 90%;
+	}
 }
 
 @media all and (max-width: 767px) {	
 	.grid-pad { width: 80%;}
 	.col-1-3 { width: 100%;}
+	.image--desktop,
+	.image--notebook,
+	.image--mobile {
+		margin: 0;
+	}
 }
 
 @media all and (max-width: 480px) {
