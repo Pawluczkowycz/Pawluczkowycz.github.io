@@ -65,11 +65,13 @@ img {
 }
 
 /* LINKS */
+a,
 a[href^="mailto"] {
 	color: #4584AC;
 	text-decoration: none;
 }
 
+ a:hover,
 a[href^="mailto"]:hover {
 	color: #414BB9;
 }
