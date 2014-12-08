@@ -35,7 +35,7 @@
 }
 h1,
 #h1-main {
-	color: #4584AC;
+	color: #000;
 	font-family: 'Lato', sans-serif;
 	font-size: 3em;
 	font-weight: 100;
@@ -93,6 +93,7 @@ header {
 	font-weight: 300;
 	padding: 5px 10px;
 	text-decoration: none;
+	transition: all 0.5s ease-in-out;
 }
 
 .header__a:hover {
