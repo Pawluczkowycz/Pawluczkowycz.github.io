@@ -15,13 +15,16 @@ body {
 header {
 	height: 60%;
 }
-h1 {	
+#thad-h1 {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
 	font-size: 5em;
 	font-weight: 800;
 	margin-bottom: 0;
 	margin-top: 10%;
 }
-h2 {
+#thad-h2 {
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
 h3 {
@@ -67,11 +70,15 @@ ul {
 li {
 	display: inline-block;
 }
-a {
+.a-thad {
 	color: #aaa;
 	font-size: 0.9em;
-	padding: 20px;
 	text-decoration: none;
+}
+.a-thad:active,
+.a-thad:focus,
+.a-thad:hover {
+	color: #333;
 }
 .fa.fa-twitter {
 	color: #55ACEE;
