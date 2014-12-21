@@ -275,6 +275,22 @@ $( "#dialog-link, #icons li" ).hover(
 		$( this ).removeClass( "ui-state-hover" );
 	}
 );
+
+var hideing = $('body').hide().fadeIn(500);
+    window.onload = hideing;
+   
+   //Fade Out on page transition
+	var $links = $('a[href$="html"]');
+		
+	$links.on('click', function(e) {
+		e.preventDefault();
+		var $href = $(this).attr('href');
+			
+		$('body').fadeOut(1000, function() {
+			window.location = $href;
+		});
+			
+	});
 	</script>
     </body>
 </html>

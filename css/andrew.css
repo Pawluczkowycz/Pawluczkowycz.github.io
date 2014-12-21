@@ -87,21 +87,40 @@ header {
 }
 
 .header__a {
-	border: 1px solid transparent;
 	color: #939133;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	padding: 5px 10px;
+	position: relative;
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
 }
 
 .header__a:hover {
-	border: 1px solid #4584AC;
 	border-radius: 3px;
-	color: #4584AC;
+	color: #333;
 }
 
+.header__a:before {
+	background-color: #4584AC;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.header__a:hover:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	visibility: visible;
+}
 /* Main */
 .btn--floatRight {
 	background-color: transparent;
@@ -111,6 +130,7 @@ header {
 	float: right;
 	padding: 0.5em;
 	text-decoration: none;
+	-webkit-animation: pulse 3s infinite;
 }
 .btn--floatRight:hover {
 	border-color: #414BB9;
@@ -119,6 +139,12 @@ header {
 	padding: 1em;
 	text-decoration: none;
 }
+
+@-webkit-keyframes pulse {
+	0% {border-color: #4584AC;}
+	50% {border-color: #ccc;}
+}
+
 .grid-pad--sixtysixPercent {
 	margin: 0 auto;
 	position: relative;
@@ -141,7 +167,14 @@ p {
 .image--small {
 	border: 5px solid #eee;
 	max-width: 600px;
+	transition: all 2s;
 }
+.image--small.threeD {
+	border: 5px solid #eee;
+	max-width: 600px;
+	transition: all 1s;
+}
+
 
 .image--small:hover {
 	border: 5px solid #ccc;
@@ -156,6 +189,7 @@ p {
 figure {
 	margin: 0;
 	position: relative;
+	transform-style: preserve-3d;
 }
 
 figcaption {
@@ -167,7 +201,7 @@ figcaption {
 }
 
 .figure__overlay {
-	background-color: rgba(249, 249, 249, 0.7);
+	background-color: rgba(254, 254, 254, 0.8);
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -179,6 +213,12 @@ figcaption {
 
 .figure__overlay-h3 {
 	margin-top: 5em;
+}
+
+.figure__overlay-h4 {
+	display: none;
+	font-size: 2.5em;
+	font-style: italic;
 }
 
 .figure__link:focus .figure__overlay,
@@ -203,7 +243,43 @@ figcaption {
 	color: #4584ac;
 	text-shadow: 1px 1px 0 #111;
 }
+/*  FIGURE TRANSIIIONS  */
+.slide-right.activated {
+	opacity: 0;
+	transform: translateX(300%);
+	z-index: 10;
+}
 
+.slide-down.activated {
+	opacity: 0;
+	transform: translateY(300%);
+	z-index: 10;
+}
+
+.spinner.activated {
+	opacity: 0;
+	transform: rotate(720deg) scale(0);
+	z-index: 10;
+}
+
+.fall-away.activated {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.fly-away.activated {
+	opacity: 0;
+	transform: scale(0) translateX(-600%) translateY(-1000%);
+}
+
+.threeD.horizontal-flip.activated {
+	perspective: 600px;
+	transform: rotateY(90deg);
+}
+.threeD.vertical-flip.activated {
+	perspective: 600px;
+	transform: rotateX(90deg);
+}
 /*  INDIVIDUAL DESIGN PAGES  */
 .image--large {
 	border: 1px solid #aaa;
