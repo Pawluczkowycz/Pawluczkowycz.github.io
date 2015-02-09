@@ -258,22 +258,6 @@
 
 <script src="../js/jquery-1.7.2.min.js"></script>
 <script src="../js/momsmarket.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-	
-		$("i.fa-bars").toggle(function() {
-			$("nav").fadeIn("slow")},
-			function() {
-				$("nav").fadeOut("slow")});
-				
-		$(window).on('resize', (function(){
-			var navDisplay = $("nav").css("display");
-			var windowWidth = $(window).width();
-			var bars = $("i.fa-bars").css("display");
-			if(windowWidth > 768 || bars == "none") {
-			$("nav").slideDown();}
-			}));
-	});
-</script>
+
 </body>
 </html>
