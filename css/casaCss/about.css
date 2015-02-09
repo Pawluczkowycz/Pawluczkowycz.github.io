@@ -1,0 +1,238 @@
+html {
+	background-image: none;
+	background-color:#fefefe;
+}
+
+#wrapper {
+	background-color: #333;
+	border-top: 1px solid #555;
+}
+
+.content__h3--hidden {
+	color: #333;
+}
+
+.grid-pad.content--about {
+	background-color: rgba(20, 20, 20, 0.9);
+	border-bottom: 1px solid #333;
+	border-top: 1px solid rgba(148, 47, 4, 0.3);
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin-top: 29%;
+	padding: 1% 10%;
+}
+
+.content--about .col-1-3 {
+	padding-right: 35px;
+}
+
+.content__btn,
+.content__btn--close {
+	background-color: #32BA3E;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.content__btn:hover {
+	background-color: #217A29;
+}
+
+.content__btn--close {
+	background-color: #86314E;
+	display: block;
+	margin: 25px 0;
+}
+
+.content__h3 {
+	color: #F09311;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 3em;
+	line-height: 1em;
+	margin-top: 12.5%;
+}
+
+.content__h4 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0.66em;
+}
+
+.content__col-1-1 {
+background-color: rgba(250, 250, 250, 1);
+	padding-right: 0;
+	position: relative;
+}
+
+.content__col-1-1--hidden {
+	display: none;
+	background-color: #fafafa;
+}
+
+.content__col-1-1--hidden p {
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+	width: 33%;
+}
+
+.content__p--middle {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.content__col-1-1--hidden > .content__col-1-3 {
+	padding-left: 20px;
+	width: 33%;
+}
+
+.hidden__img {
+	border: 5px solid #eee;
+	box-shadow: 0 5px 3px #333;
+}
+
+.content__ul {
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+	width: 33%;
+}
+
+.content__ul li {
+	color: #217a29;
+	padding-left: 0;
+	padding-top: 0.44em;
+}
+
+.grid .content__col-1-1 p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.8em;
+	margin-top: 10%;
+	text-align: left;
+}
+
+.content__img  {
+	box-shadow: 0 -3px 5px 0 #ccc;
+	height: 50%;
+	margin-bottom: -5px;
+	width: 100%;
+}
+
+.content__img#firstImage {
+	box-shadow: none;
+}
+
+.content__col-1-2,
+.content__col-1-2--right {
+	background-color: rgba(250, 250, 250, 1);
+	padding: 20px;
+}
+
+.content__col-1-2 {
+	height: 35%;
+	width: 50%;
+Xposition: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.content__col-1-2--right {
+	height: 35%;
+	padding-right: 50px;
+	width: 50%;
+Xposition: absolute;
+	bottom: 0;
+	left: 50%;
+}
+/*
+.content__banner {
+background-color: rgba(20, 20, 20, 0.3);
+border-radius: 10px;
+display: block;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding: 0 10px;
+width: auto;
+}
+
+.content__h1 {
+	color: #fff;
+	font-family: 'Vollkorn', serif;
+	font-size: 4.5em;
+	text-align: center;
+	text-shadow: 2px 1px 0 #111;
+	width: 100%;
+}
+
+.content__h2 {
+Xbackground-color: rgba(250, 250, 250, 0.3);
+	border-radius: 10px;
+	color: #F0AD4E;
+	display: inline-block;
+	font-family: 'Vollkorn', serif;
+	font-size: 1.5em;
+	margin-bottom: 0;
+	padding: 5px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #111;
+	z-index: 10;
+}
+*/
+
+.content__banner {
+background-color: rgba(240, 173, 78, 0.9);
+display: block;
+	text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding: 0 10px;
+position: absolute;
+width: 100%;
+}
+
+.content__h1 {
+	color: #fff;
+	font-family: 'Vollkorn', serif;
+	font-size: 4.5em;
+	text-align: center;
+	text-shadow: 2px 1px 0 #111;
+	width: 100%;
+}
+
+.content__h2 {
+	border-radius: 10px;
+	color: #333;
+	display: inline-block;
+	font-family: 'Vollkorn', serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: -20px;
+	padding: 5px;
+	text-align: center;
+Xtext-shadow: 1px 1px 0 #333;
+	z-index: 10;
+}
+
+footer.grid-pad {
+	background-color: #111;
+}
+
+@-webkit-keyframes blinking {
+	0% {color: #eee;}
+	50% {color: #F7FF0F;}
+	100% {color: #333;}
+}
+
+.blinker {
+	-webkit-animation-name: blinking;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 3;
+	font-size: 1.2em
+}
