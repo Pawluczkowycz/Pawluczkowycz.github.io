@@ -68,7 +68,7 @@
 			}
 			
 			//calculateWidth();
-			window.onload = calculateWidth;
+			window.setTimeout(calculateWidth, 50);
 			$(window).resize(function() {
 			
 				var newWidth = $('#maincontentcontainer').width();
