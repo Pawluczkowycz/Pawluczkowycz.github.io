@@ -67,7 +67,7 @@ img {
 /*---- Background Image ----*/
 
 html { 
-  background: url(../../images/casaImages/DSCN0102.jpg) no-repeat center 0 fixed;
+  background: url(../../images/casaImages/main_image.jpg) no-repeat center 0 fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
