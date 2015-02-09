@@ -1,0 +1,61 @@
+/*  MAKE LAYOUT RESPONSIVE at 768px FOR IPAD PORTRAIT ================================================================ */
+a i.fa.fa-bars {
+	display: block;
+}
+
+nav {
+	height: auto;
+	padding-left: 10px;
+	display: none;
+	transition: all 0.3s ease;
+}
+		
+nav ul li {
+	display: block;
+	text-align: left;
+}
+		
+nav ul li ul {
+	visibility: visible;
+	transition: all 0.3s ease;
+}
+		
+nav ul li:hover ul {
+	border-bottom: none;
+}
+		
+nav ul li ul,
+nav ul li ul li,
+h4.nav_Header {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+
+
+		header {
+			margin-top: 0;
+			width: 93.75%; /* 720px / 768px */
+		}
+
+		#maincontent{
+			width: 93.75%; /* 720px / 768px */
+		}
+
+		
+		.maincontent{
+			width: 93.75%; /* 720px / 768px */
+		}
+
+		
+		footer {
+			width: 93.75%; /* 720px / 768px */
+		}
