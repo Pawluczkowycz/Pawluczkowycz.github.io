@@ -17,12 +17,12 @@
 
 		$(document).ready(function() {
 		
-		    var target;
-			var triggers;
-			var images;
-			var lastElem;
-			var mask;
-			var imgWidth
+		    var target,
+			 triggers,
+			 images,
+			 lastElem,
+			 mask,
+			 imgWidth;
 			
 			function calculateWidth() {
 				target;
@@ -67,7 +67,7 @@
 				};
 			}
 			
-			calculateWidth();
+			//calculateWidth();
 			window.onload = calculateWidth;
 			$(window).resize(function() {
 			
