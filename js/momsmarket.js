@@ -68,7 +68,7 @@
 			}
 			
 			calculateWidth();
-			window.onload = slideshow;
+			window.onload = calculateWidth;
 			$(window).resize(function() {
 			
 				var newWidth = $('#maincontentcontainer').width();
