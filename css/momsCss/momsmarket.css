@@ -159,51 +159,21 @@ i.fa-leaf {
 }
 /*  Feature Section  ============================================================================= */
 
-		#image_wrapper {
-			margin-left: 25px;
-			position: relative;
+		#frame {
+		  position: relative;
+		  background-color: transparent;
+		  width: 100%;
+		  margin: 0 auto;
 		}
-		#image_controls {
-			clear: both;
-			margin-left: 25px;
-			position: relative;
+		.slide:first-child {
+		  display: block;
+		  width: 100%;
+		  max-width: 960px;
+		  height: auto;
+		  margin: 0 auto;
 		}
-		.mask {
-			margin: 0 auto;
-			width: 100%;
-			max-width: 960px;
-			height: auto;
-			overflow: hidden;
-			position: relative;
-		}
-		ul.images {
-		    position: relative;
-			top: 0px;
-			left: 0px;
-		}
-		ul.images li {
-		    float: left;
-		}
-		ul.triggers {
-			clear: both;
-			margin-bottom: 0;
-			text-align: center;
-			color: #fc9fea;
-			font-size: 4.5em;
-			font-style: normal;
-			font-weight: bold;
-		}		
-		ul.triggers li {
-			display: inline-block;
-			padding: 0;
-			text-shadow: 0 2px 1px #222;
-		}		
-		ul.triggers li:hover {
-			color: #FC2DD4;
-			text-shadow: 0 4px 1px #222;
-		}		
-		ul.triggers li.active {
-			text-shadow: 0 1px 0 #555;
+		.slide:not(:first-child) {
+		  display: none;
 		}
 /*  Maincontent  ============================================================================= */
 div#maincontentcontainer {
