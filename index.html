@@ -14,10 +14,17 @@
 		<link rel="stylesheet" href="css/andrew.css">
 		<link rel="stylesheet" href="css/mediaqueries.css">
         <script src="js/modernizr-2.5.3-min.js"></script>
+
+<script>
+  window.onload = function() { $('.circle, #spinner').fadeOut(5000); };
+</script>
     </head>
     <body>
         <div id="wrapper">
 		<div class="triangle"></div>
+<div id="spinner">
+<div class="circle spinner1"></div>
+</div>
 			<header class="grid-pad" id="home">
 				<div class="col-1-1">
 					<h1>Andrew W. Pawluczkowycz</h1>
@@ -184,15 +191,11 @@
 <script src="js/jquery-1.7.2.min.js"></script>
 
    <script>
-  (function($, window, document) {
-   // The $ is now locally scoped
-   // The rest of code goes here!
-   //Fade In Page
-	var hideing = $('body').hide().fadeIn(500);
-    window.onload = hideing;
    
+  (function() {
+
    //Fade Out on page transition
-	var $links = $('a[href$="html"]');
+	var $links = $('.figure__link');
 	var $h3Overlay = $('.figure__overlay-h3');
 	var $h4Overlay = $('.figure__overlay-h4');
 	
@@ -209,7 +212,8 @@
 		});
 		
 	});
-  }(window.jQuery, window, document));
+  })();
   </script>
+
     </body>
 </html>
