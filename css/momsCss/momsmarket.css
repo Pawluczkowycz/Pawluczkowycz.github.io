@@ -20,13 +20,10 @@
 	background-color: #bbb;
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
-	box-shadow: 1px 1px 5px #111;
-	left: 0;			
+	box-shadow: 1px 1px 5px #111;	
 	height: 70px;
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100px;
+	position: relative;
+	width: 100%;
 	z-index: 10;
 }
 #portfolio-link a {
