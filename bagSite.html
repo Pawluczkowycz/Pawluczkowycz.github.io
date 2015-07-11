@@ -20,7 +20,7 @@
 			<header class="grid-pad" id="home">
 				<div class="col-1-1">
 					<h1>Andrew W. Pawluczkowycz</h1>
-					<h2>Visual Design for Communication </h2>
+					<h2>Web Design and Development</h2>
 					<nav role="navigation">
 						<ul class="header__nav-ul">
 							<li><a href="index.html" class="header__a">WORK</a></li>
@@ -58,12 +58,8 @@
 <script src="js/jquery-1.7.2.min.js"></script>
 
    <script>
-  (function($, window, document) {
+  (function() {
 
-	//Fade In Page
-	var hideing = $('body').hide().fadeIn(500);
-    window.onload = hideing;
-   
    //Fade Out on page transition
 	var $links = $('a[href$="html"]');
 		
@@ -75,7 +71,7 @@
 			window.location = $href;
 		});			
 	});
-  }(window.jQuery, window, document));
+  }());
   </script>
     </body>
 </html>
