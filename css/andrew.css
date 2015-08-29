@@ -138,12 +138,18 @@ header {
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
 }
-
+.header__a.green-text {
+  color: #09AA03;
+  font-weight: 500;
+  padding-left: 0;
+}
 .header__a:hover {
 	border-radius: 3px;
 	color: #333;
 }
-
+.header__a:hover.green-text {
+  color: #09aa03;
+}
 .header__a:before {
 	background-color: #4584AC;
 	bottom: 0;
@@ -182,7 +188,17 @@ header {
 	padding: 1em;
 	text-decoration: none;
 }
-
+.social-link {
+  display: inline;
+}
+.social-link img {
+  float: none;
+  margin-bottom: 0;
+  margin-left: 10px;
+  position: relative;
+  top: 15px;
+  width: 2.2em;
+}
 @-webkit-keyframes pulse {
 	0% {border-color: #4584AC;}
 	50% {border-color: #ccc;}
