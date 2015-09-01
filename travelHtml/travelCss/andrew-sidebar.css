@@ -1,0 +1,33 @@
+/*  Sidebar  */
+figure {
+  position: relative;
+}
+.img-effect p {
+  color: #fff;
+  font-size: 1.2em;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(0%) translateX(-50%);
+  transition: all 0.3s;
+}
+.img-effect:hover p {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-50%);
+}
+.img-effect:before {
+  background-color: rgba(10, 10, 10, 0.8);
+  color: #fff;
+  content: '';
+  height: 98%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all .4s;  
+  width: 100%;
+}
+.img-effect:hover.img-effect:before {
+  opacity: .9;
+}

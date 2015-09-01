@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+/* Main Layout Grid Skeleton */
+#wrapper {
+	float: left;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+
+.grid {
+	margin: 0 auto;
+	position: relative;
+}
+
+.grid-pad {
+	margin: 0 auto;
+	padding: 20px 0 0 20px;
+	position: relative;
+}
+
+.grid:after,
+.grid-pad:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+[class *='col-'] {
+	float: left;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	position: relative;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+.col-100 { width: 100%;}
+.col-75 { width: 75%;}
+.col-66 { width: 66.666%;}
+.col-50 { width: 50%;}
+.col-33 { width: 33.333%;}
+.col-25 { width: 25%;}
+.col-20 { width: 20%;}
+.module {
+  float: left;
+  margin: 0 auto;
+  padding: 25px;
+  position: relative;
+  width: 100%;
+}

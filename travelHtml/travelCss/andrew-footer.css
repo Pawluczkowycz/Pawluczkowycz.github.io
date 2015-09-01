@@ -1,0 +1,79 @@
+/*  Navigation  */
+.nav-icons {
+  margin: 0 auto;
+  width: 250px;
+}
+@media (max-width: 600px) {
+  
+  .nav-icons {
+    float: left;
+  }
+  footer .three.columns {
+    padding-bottom: 0;
+  }
+  
+}
+footer .list-item a {
+ font-size: 1.25rem;
+ padding: 10px 0;
+}
+footer .fa-facebook-square {
+  color: #3b5998;
+}
+footer .fa-facebook-square:hover {
+  color: #6487D0;
+}
+footer .fa-twitter-square {
+  color: #4099ff;
+}
+footer .fa-twitter-square:hover {
+  color: #89BBF4;
+}
+footer .fa-google-plus-square {
+  color: #d34836;
+}
+footer .fa-google-plus-square:hover {
+  color: #FC634F;
+}
+footer .fa-linkedin-square {
+  color: #007bb6;
+}
+footer .fa-linkedin-square:hover {
+  color: #03A5F3;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+}

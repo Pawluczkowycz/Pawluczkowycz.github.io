@@ -1,0 +1,83 @@
+/*  Main Section */
+.row.main .columns.three {
+  box-shadow: 0 1px 5px #ddd;
+}
+.columns.nine {
+  border-right: 1px solid #ccc;
+}
+.columns.nine  .row:nth-of-type(2) {
+  border-bottom: 1px solid #ddd;
+}
+.fa-star {
+  color: #13a8e2;
+  padding-right: 5px;
+}
+.traveler-main {
+  margin-top: 50px;
+}
+.fa-desktop,
+.fa-cubes,
+.fa-mobile,
+.fa-users {
+  display: block;
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .main-nav.u-pull-right {
+    float: left;
+  }
+  .column.one-third {
+    width: 30.666%;
+    margin-left: 0;
+  }
+  .column.one-third:first-child {
+    margin-left: 0;
+  }
+  .columns.three {
+    width: 44%;
+    margin-left: 0;
+  }
+  .columns.four {
+    width: 30.666%;
+    margin-left: 0;
+  }
+  .columns.four h6.u-text-center {
+    text-align: left;
+  }
+  .columns.sidebar {
+    width: 100%;    
+  }
+  .columns.sidebar .columns.twelve {
+    width: 44%;
+    margin-left: 4%;
+  }
+  .one-half.column {
+    width: 44%;
+    margin-left: 4%;
+  }
+  .button {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .columns.three,
+  .columns.four,
+  .one-half.column,
+  .column.one-third  {
+    width: 100%;
+  }
+
+}

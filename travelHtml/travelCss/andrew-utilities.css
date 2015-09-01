@@ -1,0 +1,180 @@
+/*  Added Utilities Classes  */
+
+/* Table of contents
+- Base
+- Alignments
+- Backgrounds
+- Buttons/Links
+- Images
+- Typography
+*/
+
+/*  Base */
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+}
+/*****  FULL WIDTH CONTAINER  *****/
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+.columns, .column {
+  padding: 20px;
+}
+.offset-by-14percent.columns {
+  margin-left: 14.333%
+}
+.u-padding {
+  padding: 20px;
+}
+.u-padding-left-none {
+  padding-left: 0;
+}
+.u-padding-right-none {
+  padding-right: 0;
+}
+.u-padding-right {
+  padding-right: 20px;
+}
+.u-padding-bottom-none {
+  padding-bottom: 0;
+}
+.u-padding-BigBottom {
+  padding-bottom: 80px;
+}
+.u-padding-BigTop {
+  padding-top: 50px;
+}
+.u-padding-BigTopBottom {
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+.u-padding-top-none {
+  padding-top: 0;
+}
+.u-padding-none {
+  padding: 0;
+}
+.u-margin-bottom-none {
+  margin-bottom: 0;
+}
+.u-margin-bottom {
+  margin-bottom: 20px;
+}
+.u-margin-BigBottom {
+  margin-bottom: 50px;
+}
+.u-margin-top {
+  margin-top: 20px;
+}
+.u-margin-BigTop {
+  margin-top: 50px;
+}
+/*  Alignments  */
+
+.u-block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.u-text-center {
+  text-align: center;
+}
+
+/*  Backgrounds  */
+.u-bkgd-color-black {
+  background-color: #111;
+}
+.u-bkgd-color-blue {
+  background-color: #13a8e2;
+}
+.u-bkgd-color-green {
+  background-color: #0FCE12;
+}
+.u-bkgd-color-light-grey {
+  background-color: #eee;
+}
+.u-bkgd-color-maroon {
+  background-color: #85144B;
+}
+.u-bkgd-color-orange {
+  background-color: rgb(255, 133, 27);
+}
+.u-bkgd-color-white {
+  background-color: #fff;
+}
+/*  Buttons and Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+.button-medium {
+  width: 100px;
+}
+.button:hover {
+  border-color: #777;
+}
+/*  Images  */
+img {
+  max-width: 100%;
+}
+.u-image-max150 {
+  max-width: 150px;
+}
+.u-image-15 {
+  width: 15%;
+}
+.u-image-33 {
+  width: 33%;
+}
+.u-image-circle {
+  border-radius: 50%;
+  border: 2px solid #e1e1e1;
+}
+@media (max-width: 1000px) {
+  
+  .u-image-circle {
+    max-width: 60%;
+  }
+}
+/*  Typography  */
+.hide.fa {
+  opacity: 0;
+}
+.u-type-black {
+  color: #111;
+}
+.u-type-blue {
+  color: #13a8e2;
+}
+.u-type-bold {
+  font-weight: bold;
+}
+.u-type-grey {
+  color: #aaa;
+}
+.u-type-maroon {
+  color: #85144B;
+}
+.u-type-small {
+  font-size: 1.25rem;
+}
+.u-type-inline-block {
+  display: inline-block;
+}
+.u-type-white {
+  color: #fff;
+}

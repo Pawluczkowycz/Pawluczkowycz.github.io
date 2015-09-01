@@ -1,0 +1,124 @@
+/*  Main Navigation  */
+.fa-bars {
+  display: none;
+  Xposition: absolute;
+  top: 20px;
+  right: 20px;
+}
+.fa-bars:hover {
+  text-shadow: 0 2px 2px #333;
+}
+.main-ul {
+  margin-left: 25px;
+  text-align: center;
+}
+.main-ul > .listItem {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+}
+.main-ul > .listItem ul {
+  display: none;
+}
+.listItem .-down-arrow {
+  bottom: 2px;
+  color: #aaa;
+  font-size: 0.7em;
+  font-weight: lighter;
+  left: 3px;
+  position: relative;
+}
+.main-ul > .listItem a {
+  text-decoration: none;
+  box-shadow: 0 1px 1px #aaa;
+}
+.listItem:hover > .nav-submenu {
+  background-color: #fff;
+  display: block;
+  left: 0px;
+  padding: 10px 0 10px 10px;
+  position: absolute;
+  top: 5px;
+  width: 200px;
+  z-index: 15;
+}
+.nav-submenu > li {
+  display: block;
+  list-style: none;
+  padding: 10px 0;
+  text-align: left;
+}
+.nav-submenu > li:hover {
+  box-shadow: 0 1px 3px #777;  
+}
+.nav-submenu > li a {
+  padding-left: 10px;
+}
+
+@media (max-width: 760px) {
+
+  .main-ul {
+    background-color: #fff;
+    display: none;
+    left: 25%;
+    position: absolute;
+    top: 75px;
+    width: 50%;
+    z-index: 15;
+  }
+  .main-ul .list-item {
+    background-color: #13a8e2;
+    border-bottom: 1px solid #aaa;
+    color: #333;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    text-align: left;
+  }
+  .main-ul > .list-item a {
+    color: #fff;
+  }
+  .main-ul > .list-item a:hover {
+    color: #333;
+  }
+  .main-nav .list-item a:before {
+    display: none;
+  }
+  .-down-arrow {
+    display: none;
+  }
+  .main-ul > .list-item .submenu {
+    display: block;
+    width: 100%;
+  }
+  .list-item .submenu {
+    background-color: #fff;
+    border-bottom: none;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .list-item .submenu a {
+    color: #555;
+  }
+  .list-item:hover .submenu {
+    display: block;
+    padding: 0;
+    position: relative;
+    top: 0px;
+    width: 100%;
+  }
+  .main-ul > .list-item > ul li {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+  }
+  .main-nav .fa-bars {
+    display: inherit;
+  }
+
+}

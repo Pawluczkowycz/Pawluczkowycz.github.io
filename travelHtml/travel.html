@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Andrew's World Travel Mockup</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="travelCss/normalize.css">
+  <link rel="stylesheet" href="travelCss/skeleton.css">
+  <link rel="stylesheet" href="travelCss/jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="../css/font-awesome-4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="travelCss/andrew-utilities.css">
+  <link rel="stylesheet" href="travelCss/andrew-header.css">
+  <link rel="stylesheet" href="travelCss/andrew-hero.css">
+  <link rel="stylesheet" href="travelCss/andrew-main-nav.css">
+  <link rel="stylesheet" href="travelCss/andrew-main-section.css">
+  <link rel="stylesheet" href="travelCss/andrew-sidebar.css">
+  <link rel="stylesheet" href="travelCss/andrew-footer.css">
+  <link rel="stylesheet" href="travelCss/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="travelCss/andrew-tab-ui.css">
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div id="portfolio-link">
+			  <a href="https://pawluczkowycz.github.io/index.html">Back to Andrew's Portfolio Main Page</a>
+		</div>
+    <header class="row">
+      <section class="row u-bkgd-color-blue">
+        <div class="five columns u-margin-bottom-none u-padding-bottom-none u-padding-top-none">
+          <h1 class="u-margin-bottom-none u-type-white">World Traveler</h1>
+        </div>
+        <div class="seven columns u-margin-bottom-none u-padding-bottom-none">
+          <nav class="main-nav u-pull-right">
+            <i class="u-type-white fa fa-bars fa-2x"></i>
+            <ul class="main-ul u-margin-bottom-none">
+              <li class="list-item">
+                <a class="u-type-white" href="index.html">Home</a>
+              </li>
+              <li class="list-item">
+                <a class="u-type-white" href="travel.html">Locations</a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">About</a></li>
+                  <li><a href="travel.html">Clients</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+              <li class="list-item">
+                <a class="u-type-white" href="index.html">Packages</a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">About</a></li>
+                  <li><a href="travel.html">Clients</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+              <li class="list-item">
+                <a class="u-type-white" href="contact.html">Blog</a>
+              </li>
+              <li class="list-item">
+                <a class="u-type-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <section class="traveler-main">
+      <div class="row"> 
+        <div class="columns twelve u-padding-bottom-none">
+          <h3 class="u-margin-top">Mountain Lakes</h3>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="columns nine">
+          <div class="row">
+            <div class="one-half column">
+              <img class="image-swap" src="images/lakeSmall.jpg" alt="travel image" />
+                <div class="row u-margin-top">
+                  <div class="one-third column u-padding-none">
+                    <img class="image-swap" src="images/valleySmall.jpg" alt="travel image" />
+                  </div>
+                  <div class="one-third column u-padding-none">
+                    <img class="image-swap" src="images/forestSmall.jpg" alt="travel image" />
+                  </div>
+                  <div class="one-third column u-padding-none">
+                    <img class="image-swap" src="images/sunsetSmall.jpg" alt="travel image" />
+                  </div>
+                </div>
+            </div>
+            <div class="one-half column">
+              <h4 class="u-margin-bottom-none"><strong>Mountain Lakes</strong></h4>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <p class="u-margin-bottom-none">Highest ratings</p>
+              <p class="u-type-blue"><em>starting from $799</em></p>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              <hr>
+              <h6 class="u-margin-bottom-none">Tags:</h6>
+              <p>country-side, mountains, lakes, hiking, boating, cool weather</p>
+            </div>
+          </div>
+          <div class="row u-margin-top u-margin-bottom">
+            <div id="tabs" class="twelve columns">
+                <ul>
+                  <li><a href="#tabs-1">The Trip</a></li>
+                  <li><a href="#tabs-2">Additional Information</a></li>
+                  <li><a href="#tabs-3">Reviews</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <h4>The Trip</h4>
+                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                  <h4>Addition Information</h4>
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                </div>
+                <div id="tabs-3" class="u-pull-left">
+                  <h4 class="">Reviews</h4>
+                  <div class="row">
+                    <div class="u-margin-bottom u-pull-left columns three">
+                      <img class="u-pull-left u-image-max150" src="images/andrew.jpg">
+                    </div>
+                    <div class="columns nine u-padding-left-none">
+                      <h6 class="u-pull-left u-margin-bottom-none u-padding-right"><strong>Jan Tyler</strong></h6>
+                      <i class="fa fa-star u-margin-bottom"></i><i class="fa fa-star u-margin-bottom"></i><i class="fa fa-star u-margin-bottom"></i><i class="fa fa-star u-margin-bottom"></i>
+                      <p class="u-pull-left">Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    </div> 
+                  </div>
+                </div>
+            </div><!-- End of Tabs -->
+          </div><!-- End of Row -->
+
+          
+      <section class="u-bkgd-color-light-grey u-margin-bottom u-margin-BigTop">
+        <div class="row u-margin-top">
+          <div class="columns twelve u-padding-bottom-none">
+            <h3 class="u-margin-bottom-none">Featured Offers</h3>
+            <p class="u-margin-bottom-none">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          </div>
+        </div>
+        <div class="row u-padding">
+          <div class="columns four">
+            <figure>
+			        <span class="small-image">
+			         <img src="images/forestSmall.jpg" alt="travel image" />
+			        </span>
+              <figcaption class="img-effect">
+                <p>View</p>
+              </figcaption>
+            </figure>
+            <h6 class="u-text-center u-margin-bottom-none"><strong>Enchanted Forest</strong></h6>
+            <a class="button" href="#">Find out more</a>
+          </div>
+          <div class="columns four">
+            <figure>
+			        <span class="small-image">
+			         <img src="images/wavesSmall.jpg" alt="travel image" />
+			        </span>
+              <figcaption class="img-effect">
+                <p>View</p>
+              </figcaption>
+            </figure>
+            <h6 class="u-text-center u-margin-bottom-none"><strong>Coastal View</strong></h6>
+            <a class="button" href="#">Find out more</a>
+          </div>
+          <div class="columns four">
+            <figure>
+			        <span class="small-image">
+			         <img src="images/valleySmall.jpg" alt="travel image" />
+			        </span>
+              <figcaption class="img-effect">
+                <p>View</p>
+              </figcaption>
+            </figure>
+            <h6 class="u-text-center u-margin-bottom-none"><strong>Quiet Valley</strong></h6>
+            <a class="button" href="#">Find out more</a>
+          </div>
+        </div><!-- End of Row -->
+      </section>
+      
+  
+      </div><!-- End of Nine Columns -->
+      <div class="columns three sidebar">
+          <div class="columns twelve">
+            <img src="images/sanfrancisoSmall.jpg" alt="travel image" />
+            <h6 class="u-margin-bottom-none"><strong>City by the Bay</strong></h6>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <div class="columns twelve">
+            <img src="images/desertSmall.jpg" alt="travel image" />
+            <h6 class="u-margin-bottom-none"><strong>Desert Beauty</strong></h6>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <div class="columns twelve">
+            <img src="images/irishstreetSmall.jpg" alt="travel image" />
+            <h6 class="u-margin-bottom-none"><strong>European Cities</strong></h6>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <div class="columns twelve">
+            <img src="images/sunsetSmall.jpg" alt="travel image" />
+            <h6 class="u-margin-bottom-none"><strong>Wide Open Spaces</strong></h6>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+        </div><!-- End of Three Column Sidebar -->      
+      
+      </div><!-- End of Row --> 
+    </section>
+        
+    <section class="row u-bkgd-color-maroon u-margin-top">
+      <div class="columns twelve">
+        <h3 class="u-text-center u-type-white u-margin-bottom-none u-margin-top">Call or Email Us Today</h3>
+		    <p class="u-text-center u-type-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		    <h5 class="u-type-white u-text-center u-margin-bottom-none">Customer Support</h5>
+        <h5 class="u-type-white u-type-bold u-text-center">1.800.321.4321</h5>
+      </div>
+    </section><!-- End of Row -->
+    <footer class="row u-bkgd-color-black" id="footer">
+      <div class="three columns">
+        <h5 class="u-type-white u-type-bold u-margin-bottom-none">More Information</h5>
+        <p class="u-type-grey u-type-small u-margin-bottom-none">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+        </p>
+      </div>
+      <div class="three columns">
+        <h5 class="u-type-white u-type-bold u-margin-bottom-none">Contact Us</h5>
+        <p class="u-type-grey u-type-small u-margin-bottom-none"><i class="fa fa-map-marker fa-1x u-type-blue"> </i> 321 Ashburn Blvd<br>
+          Ashburn, VA 20147, USA
+        </p>
+        <p class="u-type-grey u-type-small u-margin-bottom-none"><i class="fa fa-envelope-o u-type-blue"></i> info@worldtravel.com</p>
+      </div>
+      <div class="three columns">
+        <nav class="nav-icons">
+            <ul class="u-margin-bottom-none">
+              <li class="list-item u-margin-bottom-none u-padding-bottom-none"><a class="u-type-white" href="#nowhere" title="facebook"><i class="animated fa fa-facebook-square fa-2x"></i></a>
+              </li>
+              <li class="list-item u-margin-bottom-none u-padding-bottom-none"><a class="u-type-white" href="#nowhere" title="twitter"><i class="animated fa fa-twitter-square fa-2x"></i></a></li>
+              <li class="list-item u-margin-bottom-none u-padding-bottom-none"><a class="u-type-white" href="#nowhere" title="google plus"><i class="animated fa fa-google-plus-square fa-2x"></i></a></li>
+              <li class="list-item u-margin-bottom-none u-padding-bottom-none"><a class="u-type-white" href="#nowhere" title="linkedin"><i class="animated fa fa-linkedin-square fa-2x"></i></a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="three columns">
+        <h4 class="u-type-white u-margin-bottom-none">World Traveler</h4>
+        <p class="u-type-grey u-margin-bottom-none">&#169; 2015. All Rights Reserved</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="../js/jquery-1.11.1.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script>
+		  
+		$(document).ready(function() {
+		  
+      // Opening Animation
+      $("#main-img").animate({
+			  left: "+=100px",
+			  opacity: 1.0
+			}, 900);
+      
+      $("#hero-h2").fadeIn(1000);
+			$("#hero-p").slideDown(700);
+      $("#hero-a").fadeIn(1500).css('display', 'block');
+
+      // Reveal Navigation
+      $('.fa-bars').on('click', function(){
+        $('.main-ul').toggle();
+      });
+      
+      
+      // Scrolling Animation
+      var win = $(window),
+			    page = $('body'),
+				nav100 = $('header'),
+        documentHeight = $('body').height(),
+        footerHeight = $('#footer').height();
+
+			win.on('scroll', function() {
+        var totalH = page.scrollTop() + win.height(),
+           targetH = totalH - 0.5 * footerHeight,
+        containerH = $('.container').height(),
+           windowH = win.height(),
+          headerH1 = $('header h1');
+        
+			  if (page.scrollTop() > 20) {
+			    nav100.addClass('header-moveUp');
+          headerH1.css({
+            'font-size': '3rem',
+            'margin-top': '10px'
+           });
+			  }
+			  if (page.scrollTop() < 20) {
+			    nav100.removeClass('header-moveUp');
+          headerH1.css('font-size', '4rem');
+			  }
+        if (page.scrollTop() > containerH - windowH - 100) {
+          $('.fa-twitter-square').addClass('slideInUp');
+          $('.fa-google-plus-square').addClass('slideInUp');
+          $('.fa-facebook-square').addClass('slideInUp');
+          $('.fa-linkedin-square').addClass('slideInUp');
+        }
+        if (page.scrollTop() < containerH - windowH - 100) {
+          $('.fa-twitter-square').removeClass('slideInUp');
+          $('.fa-google-plus-square').removeClass('slideInUp');
+          $('.fa-facebook-square').removeClass('slideInUp');
+          $('.fa-linkedin-square').removeClass('slideInUp');
+        }
+			});
+      
+      // Small Image Pop-out
+      var smallImage = $('.small-image');
+      var imageScreen = $('.img-effect');
+      
+        imageScreen.on('click', function() {
+        
+          $(this).prev('.small-image').css({
+            'position': 'fixed',
+            'top': 0,
+            'left': 0,
+            'right': '0',
+            'bottom': '0',
+            'background-color': 'rgba(0,0,0,0.7)',
+            'z-index': 15
+          });
+          
+          $(this).prev('.small-image').find('img').css({
+            'box-shadow': '0 1px 15px #000',
+            'max-width': '500px',
+            'width': '100%',
+            'position': 'fixed',
+            'top': '50%',
+            'left': '50%',
+            'transform': 'translateY(-50%) translateX(-50%)',
+            'z-index': 15
+          });
+          
+          smallImage.find('img').on('click', function() {
+            
+            $('.small-image').css({
+              'position': 'relative',
+              'top': 0,
+              'left': 0,
+              'right': '0',
+              'bottom': '0',
+              'background-color': 'none',
+              'z-index': 0
+            });
+            
+            $(this).css({
+              'box-shadow': 'none',
+              'max-width': '100%',
+              'width': 'auto',
+              'position': 'relative',
+              'top': '0',
+              'left': '0',
+              'transform': 'translateY(0) translateX(0)',
+              'z-index': '0'
+            });
+          });
+
+      });
+      
+      // jQueryUi Tabs
+      $( "#tabs" ).tabs();
+      
+      
+      // Image Swap Function
+      var $imgSwap = $('.image-swap');
+
+      $imgSwap.on('click', function() {
+        
+        var $bigImg = $('.one-half .image-swap:first'),
+            $thisSource = $(this).attr('src'),
+            $bigImgSource = $bigImg.attr('src'),
+           $that = $(this);
+        
+        $(this).attr('src', $bigImgSource);
+        $bigImg.attr('src', $thisSource);
+        
+      });
+    });
+    
+  </script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

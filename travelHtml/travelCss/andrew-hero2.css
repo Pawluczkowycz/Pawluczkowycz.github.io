@@ -1,0 +1,37 @@
+/*  Hero  */
+
+.hero2 {
+  margin-top: 60px;
+  min-height: 450px;
+  padding: 80px 0;
+  background: url("../images/goldengate.jpg") no-repeat 30% 50%;
+}
+.hero img {
+  border: 1px solid #999;
+  border-radius: 50%;
+  left: -100px;
+  margin-left: 20%;
+  max-width: 500px;
+  position: relative;
+  opacity: 0;
+  width: 60%;
+}
+#hero-h2, #hero-p, #hero-a {
+  display: none;
+}
+.hero h2 {
+  color: #fff;
+  font-size: 7rem;
+  text-shadow: 0 1px 3px #111;
+  text-transform: uppercase; 
+}
+@media (max-width: 500px) {
+  
+  .hero h2 {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+.hero a {
+  margin: 0 auto;
+}
