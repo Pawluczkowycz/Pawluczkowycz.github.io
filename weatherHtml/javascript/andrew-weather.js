@@ -73,7 +73,7 @@ var andrew = function(jQuery) {
 			newState = this.newState.value;
 
 			 $.ajax({
-			  url: "http://api.wunderground.com/api/49ef740b3b58e7ce/conditions/q/" + newState + "/" + newCity + ".json",
+			  url: "https://api.wunderground.com/api/49ef740b3b58e7ce/conditions/q/" + newState + "/" + newCity + ".json",
 			  dataType: 'jsonp'
 		    })
 		    .done(function(data) {
@@ -95,7 +95,7 @@ var andrew = function(jQuery) {
 			newState = this.newState.value;
 
 			 $.ajax({
-			  url: "http://api.wunderground.com/api/49ef740b3b58e7ce/forecast10day/q/" + newState + "/" + newCity + ".json",
+			  url: "https://api.wunderground.com/api/49ef740b3b58e7ce/forecast10day/q/" + newState + "/" + newCity + ".json",
 			  dataType: 'jsonp'
 		    })
 		    .done(function(data) {
