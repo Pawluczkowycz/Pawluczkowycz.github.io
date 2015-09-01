@@ -30,7 +30,7 @@ var andrew = function(jQuery) {
 					longitude = position.coords.longitude;
 
 				$.ajax({
-				  url: "http://api.wunderground.com/api/49ef740b3b58e7ce/conditions/q/" + latitude + "," + longitude + ".json",
+				  url: "https://api.wunderground.com/api/49ef740b3b58e7ce/conditions/q/" + latitude + "," + longitude + ".json",
 				  dataType: 'jsonp'
 				})
 				.done(function(data) {
@@ -50,7 +50,7 @@ var andrew = function(jQuery) {
 		   getGeoForecast: function(latLog) {
 
 			 $.ajax({
-			  url: "http://api.wunderground.com/api/49ef740b3b58e7ce/forecast10day/q/" + latLog + ".json",
+			  url: "https://api.wunderground.com/api/49ef740b3b58e7ce/forecast10day/q/" + latLog + ".json",
 			  dataType: 'jsonp'
 		    })
 		    .done(function(data) {
