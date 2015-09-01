@@ -1,8 +1,8 @@
 body {
 	
 }
-#wrapper2 {
-	background: url('../images/cityBkgd.jpg') no-repeat center 0 fixed;
+#wrapper {
+	background: url('../../images/cityBkgd.jpg') no-repeat center 0 fixed;
 	background-size: cover;
 	border: 1px solid #aaa;
 	box-shadow: 0 0 10px 0 #333;

@@ -1,0 +1,141 @@
+@media all and (max-width: 1129px) and (min-width: 960px) {
+	
+}
+
+@media all and (max-width: 959px) {
+
+}
+
+@media all and (max-width: 767px) {
+
+	#button--hidden {
+		background-color: #333;
+		border: 1px solid #bf54a6;
+		border-radius: 5px;
+		color: #eee;
+		display: block;
+		font-size: 0.8em;
+		margin: 0 30px 5px;
+		padding: 5px 15px;
+		text-shadow: none;
+	}
+
+	#topBar {
+		display: none;
+	}	
+	
+	#topBarContainer {
+		height: auto;
+		padding-bottom: 5px;
+		padding-top: 15px;
+	}
+	
+	#topBar ul {		
+		display: block;
+		margin-bottom: 0;
+	}
+	
+	#topBar li {
+		border-bottom: 1px solid #888;
+		display: block;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	ul#contact {
+		display: block;
+		float: none;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	
+	h1 {
+		font-size: 4.8em;
+	}
+}
+
+@media all and (max-width: 480px) {
+	
+	#topBar ul {
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+	
+	header {
+		padding-bottom: 15px;
+	}
+	
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.8em;
+		margin-top: -15px;
+	}
+	#header-nav ul {
+		margin-top: 15px;
+		padding-left: 0;
+	}
+	#feature.section.group {
+		width: 100%;
+	}
+	img.process {
+		width: 100%;
+	}
+	.coloredBox {
+		display: none;
+	}
+	.order-btn.Change {
+		display: none;
+	}
+	.order-btn.Add {
+		display: block;
+	}
+	#modalDiv {
+		margin: 0;
+		width: 100%;
+	}
+	table, caption, tbody, th, td, tr {
+		display: block;
+	}
+	#tableRule,
+	td[colspan="4"],
+	td[colspan="2"] {
+		display: none;
+	}
+	th { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	/* Labels */
+	td:nth-of-type(1):before { content: "Item";}
+	td:nth-of-type(2):before { content: "Quantity";}
+	td:nth-of-type(3):before { content: "Price";}
+	td:nth-of-type(4):before { content: "TOTAL";}
+
+	td.totalItems:before {
+		content: "Subtotal:";
+	}
+	td.totalItems {
+		border-top: 2px solid #ccc;
+	}
+}

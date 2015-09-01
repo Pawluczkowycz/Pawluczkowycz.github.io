@@ -26,6 +26,7 @@ body {
 }
 
 .grid-pad {
+  clear: both;
 	margin: 0 auto;
 	padding: 20px 0 0 20px;
 	position: relative;
