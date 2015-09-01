@@ -1,0 +1,170 @@
+body {
+  background-color: #fffS;
+}
+#wrapper {
+  Xbackground-color: #131730;
+  color: #050505;
+  font-family: 'Raleway', sans-serif;
+  height: 500px;
+  min-height: 100%;
+  opacity: 0;
+  -moz-perspective: 600px;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+}
+[class*='col-'] {
+  padding-bottom: 0;
+}
+#flipper {
+  float: left;
+  position: relative;
+  transform-origin: center center;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  width: 100%;
+}
+#flipper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flipped {
+  -moz-transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+span p { display: inline-block };
+#logo {
+  width: 25%;
+  min-width: 107px;
+}
+span {
+  background-color: transparent;
+  display: block;
+}
+#time {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.module {
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  margin: 0;
+  background-image: linear-gradient(#fcfcfc, #e4e4e4);
+}
+#tenDayForecast {
+  /*backface-visibility: hidden;
+  position: absolute;
+  -moz-transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+  top: 0;
+  left: 0;
+  */
+  display: none;
+}
+#currentConditions {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #555;
+  transition: all 0.4s;
+}
+button:hover {
+  box-shadow: 0 3px 5px #777,
+    0 3px 10px #aaa;
+}
+#extended-forecast-btn,
+#three-day-btn,
+#search-btn {
+	display: none;
+	margin-bottom: 5px;
+	width: 150px;
+}
+#cancel-btn {
+  display: inline-block;
+  display: none;
+}
+#city-state {
+  display: inline-block;
+}
+.weather.grid-pad {
+  padding-top: 0;
+}
+#logo {
+    width: 25%;
+}
+/****   Utilities  ****/
+  /*  Text  */
+  .text-small {
+    font-size: 0.8rem;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  /*  Margins and Padding  */
+  .margin-Bottom {
+    margin-bottom: 20px;
+  }
+  .margin-Bottom-big {
+    margin-bottom: 50px;
+  }
+  .margin-Bottom-small {
+    margin-bottom: 5px;
+  }
+  .margin-Bottom-none {
+    margin-bottom: 0;
+  }
+  .margin-Right {
+    margin-right: 20px;
+  }
+  .margin-Top-none {
+    margin-top: 0;
+  }
+  .margin-Top-small {
+    margin-top: 5px;
+  }
+  .margin-TopBottom-none {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .padding-Top-none {
+    padding-top: 0;
+  }
+  /*  Display  */
+  .display-block {
+    display: block;
+  }
+  .display-inline {
+    display: inline;
+  }
+  .display-inlineBlock {
+    display: inline-block;
+  }
+  .border-radius-Top {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+
+@media (min-width: 650px) { 
+  .module {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #logo {
+    width: 15%;
+  }
+}
