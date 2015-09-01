@@ -33,9 +33,12 @@
 			
 			<div class="grid-pad--sixtysixPercent">
 				<section class="col-1-1">
+          <a href="file:///C:/Users/Andrew/Desktop/Projects/AndrewPortfolio/momsHtml/index.html" class="header__a green-text" target="_blank">Live Site</a>
 					<h3>Organic Grocery Store Website Mockup</h3>
-					<p>Mom's Market is a fictitious organic food and grocery store. The idea comes from a local market's site, which I believe looks a little dated. I chose bright colors and a simple layout to suggest an warm and inventing atmosphere for the store.
+					<p>Mom's Market is a fictitious organic food and grocery store. The idea comes from a local market's site, which I believe looks a little dated. For the overall look I chose bright colors and a simple layout to suggest an warm and inventing atmosphere for the store.
 					</p>
+          <p>The site was built using Graham Miller's <a href="http://www.responsivegridsystem.com/" target="_blank">Responsive Grid System</a>, a small css framework I stumbled upon. I've added a jQuery slideshow and <a href="http://fontawesome.io/" target="_blank">Font Awesome</a> icons.
+          </p>
 				</section>
 				<div class="col-1-1">
 					<h4>Landing Page of Site: Mobile, Notebook and Desktop</h4>
@@ -49,33 +52,11 @@
 					<img src="images/momsSecondPageMini.png" class="image--large" alt="second page sample of organic market website">
 					<h4>And Another Page of Site</h4>
 					<img src="images/momsThirdPageMini.png" class="image--large" alt="third page sample of organic market website">
-				<button class="btn--floatRight"><a href="#home">TOP</a></button>	
+				<a href="#home" class="btn--floatRight">TOP</a>	
 				</div>
 			</div>
 		</div>
 <script src="js/jquery-1.7.2.min.js"></script>
 
-   <script>
-  (function($, window, document) {
-   // The $ is now locally scoped
-   // The rest of code goes here!
-   //Fade In Page
-	var hideing = $('body').hide().fadeIn(500);
-    window.onload = hideing;
-   
-   //Fade Out on page transition
-	var $links = $('a[href$="html"]');
-		
-	$links.on('click', function(e) {
-		e.preventDefault();
-		var $href = $(this).attr('href');
-			
-		$('body').fadeOut(1000, function() {
-			window.location = $href;
-		});
-			
-	});
-  }(window.jQuery, window, document));
-  </script>
     </body>
 </html>

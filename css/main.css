@@ -59,12 +59,16 @@ body {
 
 /* Images and Figures*/
 
-img { 
+img {
 	height: auto;
 	position: relative;
 	width: 100%;
 }
 
+.col-1-1 img {
+  float: left;
+  margin-bottom: 20px;
+}
 /* LINKS */
 a,
 a[href^="mailto"] {

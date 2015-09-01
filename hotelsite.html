@@ -33,10 +33,11 @@
 			
 			<div class="grid-pad--sixtysixPercent">
 				<section class="col-1-1">
+          <a href="file:///C:/Users/Andrew/Desktop/Projects/AndrewPortfolio/casaHtml/index.html" class="header__a green-text" target="_blank">Live Site</a>
 					<h3>Hotel Website Mockup</h3>
-					<p>The Casa Yunque Ecolodge is a fictitious hotel located in a rainforest. The idea was based on a vacation my family and I took to the beautiful island of Puerto Rico. The rainforest was probably my favorite part of the trip, but the beaches of Rincon are a near second.
+					<p>The Casa Yunque Ecolodge is a fictitious hotel located in a rainforest. The idea was based on a vacation my family and I took to the beautiful island of Puerto Rico.
 					</p>
-					<p>I've made the design responsive using media queries, so the layout would change depending on the dimensions of the browser viewport or the device, shown below is the desktop version. I've included a Google Web font and a little jQuery and CSS3 styles to complement imagery and layout.
+					<p>The overall layout is based on Chris Coyier's CSS-Tricks article <a href="https://css-tricks.com/dont-overthink-it-grids/">"Don't Overthink It Grids"</a>: a responsive, flexible grid was built using percentages and media queries. Shown below is the desktop version. I've included a Google Web font and a little jQuery and CSS3 styles to complement imagery and layout.
 					</p>
 				</section>
 				<div class="col-1-1">
@@ -44,31 +45,11 @@
 					<img src="images/casaSite--Big.jpg" class="image--large" alt="landing page of hotel website">
 					<h4>Second Page of Site</h4>
 					<img src="images/about123.jpg" class="image--large" alt="second page sample of hotel website">
-				<button class="btn--floatRight"><a href="#home">TOP</a></button>	
+				<a href="#home" class="btn--floatRight">TOP</a>	
 				</div>
 			</div>
 		</div>
 <script src="js/jquery-1.7.2.min.js"></script>
 
-   <script>
-  (function($, window, document) {
-
-	//Fade In Page
-	var hideing = $('body').hide().fadeIn(500);
-    window.onload = hideing;
-   
-   //Fade Out on page transition
-	var $links = $('a[href$="html"]');
-		
-	$links.on('click', function(e) {
-		e.preventDefault();
-		var $href = $(this).attr('href');
-			
-		$('body').fadeOut(1000, function() {
-			window.location = $href;
-		});			
-	});
-  }(window.jQuery, window, document));
-  </script>
     </body>
 </html>

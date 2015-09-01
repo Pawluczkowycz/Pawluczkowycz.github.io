@@ -215,11 +215,13 @@ a i.fa {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	text-shadow: 0 2px 2px #555;
+	text-shadow: 0 2px 1px #222;
+  transition: all 0.4s;
 }
 
 a i.fa:hover {
-	text-shadow: 0 3px 2px #222;
+	text-shadow: 0 3px 5px #555;
+  transition: all 0.4s;
 }
 
 div.col.span_1_of_3,
