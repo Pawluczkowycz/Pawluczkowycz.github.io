@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>E-commerce Mockup</title>
+	<meta name="description" content="This is the Responsive Grid System, a quick, easy and flexible way to create a responsive web site.">
+	<meta name="keywords" content="e-commerce, web design, portfolio">
+
+	<meta name="author" content="andrew pawluczkowycz">
+
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="../css/bagCss/html5reset.css" media="all">
+	<link rel="stylesheet" href="../css/bagCss/responsivegridsystem.css" media="all">
+	<link rel="stylesheet" href="../css/bagCss/col.css" media="all">
+	<link rel="stylesheet" href="../css/bagCss/2cols.css" media="all">
+	<link rel="stylesheet" href="../css/bagCss/3cols.css" media="all">
+	<link rel="stylesheet" href="../css/bagCss/4cols.css" media="all">
+	<link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bagCss/ecommerce.css" media="all">
+	
+	<!-- Responsive Stylesheets -->
+	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="../css/bagCss/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="../css/bagCss/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="../css/bagCss/480.css">
+	<link rel="stylesheet" href="../css/bagCss/mediaqueries.css" media="all">
+
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+	<script src="../js/modernizr-2.5.3-min.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <div id="portfolio-link">
+	  <a href="https://pawluczkowycz.github.io/index.html">Back to Andrew's Portfolio Main Page</a>
+	</div>
+	<div id="headcontainer">
+		<div id="topBarContainer">
+			<button id="button--hidden">MENU</button>
+			<div id="topBar" class="group">
+				<ul>
+					<li><a href="index.html"><i class="fa fa-home fa-2x"></i> HOME</a></li>
+					<li><a href="#openModal"><i class="fa fa-shopping-cart fa-2x"></i> SHOPPING CART</a></li>
+					<li><a href="order.html"><i class="fa fa-check-circle fa-2x"></i> CHECKOUT</a></li>
+				</ul>
+				
+				<ul id="contact">
+					<li><a href="about.html"><i class="fa fa-phone fa-2x"></i> CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="openModal" class="modalDialog">
+			<div id="modalDiv">
+				<a href="#close" title="Close" class="close">X</a>
+				<table>
+					<caption>YOUR SHOPPING CART</caption>
+					<tr>
+						<th>Item</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th>Total</th>
+					</tr>
+					<tr>
+						<td>SATCHEL BAG</td>
+						<td>1</td>
+						<td>125</td>
+						<td>125</td>
+					</tr>
+					<tr>
+						<td>MESSENGER BAG</td>
+						<td>1</td>
+						<td>119</td>
+						<td>119</td>
+					</tr>
+					<tr id="tableRule">
+						<td colspan="4"><hr></td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+						<th class="totalItems">TOTAL:</th>
+						<td class="totalItems"><span>$ </span>244</td>
+					</tr>
+				</table>
+				<a href="order.html" class="floatRight"><button>Checkout</button></a>
+				<a href="#close" class="floatRight"><button>Continue Shopping</button></a>
+			</div>
+		</div>
+		<header>
+			<div id="banner">
+				<h1>Brookbury Drive</h1>
+				<h2>Handmade Leather Bags</h2>
+			</div>
+			<nav id="header-nav">
+				<ul>
+					<li><a href="shop.html">SHOP</a>
+					</li>
+					<li><a href="news.html">WHAT'S NEW</a>
+					</li>
+					<li><a href="process.html">OUR PROCESS</a>
+					</li>
+					<li><a href="look.html">LOOKBOOK</a>
+					</li>
+					<li><a href="about.html">ABOUT</a>
+					</li>
+					<li><a href="order.html">ORDERING</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div id="maincontentcontainer">
+
+		<div id="maincontent">
+			<div class="group section">
+				<div class="col span_4_of_4">
+					<img src="images/leathershop_1Small.jpg">
+				</div>
+			</div>
+			
+			<div class="group section">
+				<div class="col span_1_of_4">
+					<img class="process floatLeft" src="images/process_2Small.jpg">
+				</div>
+				<div class="col span_3_of_4">
+					<h3>About <span class="small-caps">Brookbury Drive</span></h3>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+					</p>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+					</p>				
+				</div>
+			</div>
+				
+			<div class="submain section group">
+				<div class="col span_3_of_4">
+					<a name="ashburn"></a>
+					<h3>How to Contact Us</h3>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+					</p>
+					<address>2301 Brookbury Drive<br>
+							Ashburn, Virginia 20147<br>
+							(703) 321-4321<br>
+							or (703) 321-9876<br>
+							brookburydrive@gmail.com
+					</address>
+				</div>
+				<div class="floatRight col span_1_of_4">
+					<img class="process floatRight" src="images/process_1Small.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footercontainer">
+		<footer class="group">
+			<div class="col span_1_of_4">
+				<h4>PAYMENT INFO</h4>
+				<p>We accept payments with Paypal and all credit cards accepted by Paypal (Visa, Mastercard, American Express and Discover).
+				</p>
+			</div>
+			<div class="col span_1_of_4">
+				<h4>TERMS AND CONDITIONS</h4>
+				<p>All packages will be sent with a tracking number and certified, which will be provided to you by email. in case you're not happy with one of our products or regret your purchase, we will issue a refund for the price of the item you bought.
+				</p>
+			</div>
+			<div class="col span_1_of_4">
+				<h4>NEWS AND UPDATES</h4>
+				<p>For news and updates please follow us on our Tumblr blog, subscribe on Facebook or follow us on Twitter.
+				</p>
+			</div>
+			<div class="col span_1_of_4">
+				<h4>CONTACT</h4>
+				<input type="email" name="EMAIL" placeholder="Subscribe to our mailing list">
+			</div>
+
+   			<br class="breaker" />
+
+
+
+		</footer>
+	</div>
+</div>
+
+
+
+	<!-- JavaScript at the bottom for fast page loading -->
+	<script src="../js/jquery-1.7.2.min.js"></script>
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
+
+	<!-- More Scripts-->
+<script>
+		$(document).ready(function() {
+			$('#button--hidden').on('click', function() {
+				$('#topBar').slideToggle();
+			});
+		});
+</script>
+<script>
+	$(document).ready(function() {
+	
+		$("#banner h1").fadeIn(2000);
+		$("#banner h2").fadeIn(6000);
+		$(".process").animate({
+		   left: "0px",
+		   opacity: 1.0
+		}, 1300);
+		var activeImg = $('img.active');
+		
+		$('#big-bag').on('click', function(e) {
+			e.preventDefault();
+		});
+		
+		$('#thumbs').on('click', 'img', function(e) {
+			e.preventDefault();
+			
+			if($(this) != activeImg) {
+				$('img').removeClass('active');
+				$(this).addClass('active');
+				var $src = $(this).attr('src');
+				$('#big-bag').attr('src', $src);
+			};
+		});		
+	});
+</script>
+</body>
+</html>
