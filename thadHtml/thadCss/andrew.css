@@ -1,0 +1,93 @@
+body {
+	background: url('../../images/cityBkgd.jpg') no-repeat center 0 fixed;
+	background-size: cover;
+}
+#wrapper {
+	color: #eee;
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+header {
+	height: 60%;
+}
+h1 {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	font-weight: 800;
+	margin-bottom: 0;
+	margin-top: 10%;
+}
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+h3 {
+	color: #aaa;
+	font-weight: 300;
+}
+h3 span {
+	color: #eee;
+}
+#lineBreak {
+	display: none;
+}
+.quotesDiv {
+	display: inline-block;
+	height: 30%;
+	min-height: 500px;
+}
+.quotes {
+	display: none;
+	font-style: italic;
+	line-height: 1.5em;
+	margin: 0 auto 25px;
+	padding: 20px 0 0 20px;
+	position: relative;
+	text-align: left;
+	width: 60%;
+}
+.quotes span {
+	color: #aaa;
+	font-weight: bold;
+}
+nav {
+	margin-bottom: 25px;
+	margin-top: 5px;
+	bottom: 0;
+	width: 100%;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: inline-block;
+}
+.a-thad {
+	color: #aaa;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+.a-thad:active,
+.a-thad:focus,
+.a-thad:hover {
+	color: #fff;
+}
+.fa.fa-twitter {
+	color: #55ACEE;
+}
+.fa.fa-envelope {
+	color: #96854A;
+}
+.fa.fa-book {
+	color: #FC9B18;
+}
+/*  Header */
+
+
+/* Main */
+
