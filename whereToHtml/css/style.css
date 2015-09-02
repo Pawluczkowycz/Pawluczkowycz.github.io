@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 50px;
+}
+
+body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.form-container {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+  @media (max-width: 700px) {
+    .form-container > * {
+      display: block;
+      margin: 0 auto 5px auto;
+      text-align: left;
+      width: 80%;
+    }
+  }
+
+.form-container input {
+  font-size: 1em;
+}
+
+.form-container button {
+  font-size: 0.8em;
+  height: 30px;
+  text-align: center;
+}
+
+.streetview-image {
+  width: 100%;
+  max-width: 600px;
+}
+
+.greeting {
+    color:black;
+    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
+    text-align: center;
+}
+
+.wikipedia-container {
+    float:right;
+    width:40%;
+    padding:10px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.nytimes-container {
+    float: left;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.7);
+    width: 60%;
+}
+
+  @media (max-width: 500px) {
+    .wikipedia-container, .nytimes-container {
+      width: 100%;
+      float: left;
+    }
+  }
+
+.article-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.article {
+    list-style-type: none;
+    padding: 10px 10px 10px 0;
+    border-top: 1px solid #CCC;
+}
+.article:first-child {
+    border-top:none;
+}
+
+.wikipedia-links {
+  list-style-type: none;
+}
+
+.wiki-topics {
+  padding: 8px 0;
+}
+
+.error-message {
+    padding: 10px;
+    padding-left: 0;
+    color: #777;
+    font-size: 1.5em;
+    list-style: none;
+}
