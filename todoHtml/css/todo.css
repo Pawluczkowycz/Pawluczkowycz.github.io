@@ -1,0 +1,21 @@
+#todos span {
+  color: #aaa;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+.ui-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.ui-listview > li {
+  margin-bottom: 5px;
+}
+.ui-page-theme-a .ui-btn {
+  box-shadow: 0 1px 2px #555;
+  transition: box-shadow .4s;
+}
+.ui-page-theme-a .ui-btn:hover {
+  box-shadow: 0 5px 12px #878787;
+}
