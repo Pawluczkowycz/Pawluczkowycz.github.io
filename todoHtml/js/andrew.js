@@ -7,7 +7,6 @@
       // Set Todo list variable
       this.todoList = JSON.parse(localStorage.getItem('todos'));
       this.cacheDom();
-      this.bindEvents();
       this.render();
       todoClear.init();
       todoEdit.init();
@@ -17,9 +16,6 @@
       this.$addButton = this.$el.find('#add-button');
       this.$clearButton = this.$el.find('#clear-button');
       this.$todosList = this.$el.find('#todos');
-    },
-    bindEvents: function() {
-      this.$addButton.on('click', todoAdd.init);
     },
     render: function() {
       if (localStorage.getItem('todos') !== null) {
@@ -59,7 +55,7 @@
       this.$todoDate = this.$el.find('#todo_date');
     },
     bindEvents: function() {
-      this.$saveBtn.on('click', this.submit.bind(this));
+      this.$saveBtn.on('click', this.submit);
       this.$todoName.on('keypress', this.keypress);
     },
     render: function(todo_name, todo_date) {
@@ -72,10 +68,8 @@
     keypress: function(e) {
       if(e.which == 13) {
         e.preventDefault();
-        console.log('keypress function');
         todoAdd.submit();
-        window.location =
-        "https://pawluczkowycz.github.io/todoHtml/index.html";
+        $(location).attr('href', "https://pawluczkowycz.github.io/todoHtml/index.html#home");
       }       
     },
     submit: function() {
@@ -85,8 +79,10 @@
       // Simple field validation
       if (todo_name == '') {
         alert('Please give the todo a name');
+        return;
       } else if (todo_date == '') {
         alert('Please add a date');
+        return;
       } else {
         var todos = JSON.parse(localStorage.getItem('todos'));  
       
@@ -102,14 +98,14 @@
         todos.push(new_todo);
         localStorage.setItem('todos',JSON.stringify(todos));
 
-        this.clear();
-        this.render(todo_name, todo_date);
+        todoAdd.clear();
+        todoAdd.render(todo_name, todo_date);
       }
       
     },
     clear: function() {
-      this.$todoName.val('');
-      this.$todoDate.val('');
+      todoAdd.$todoName.val('');
+      todoAdd.$todoDate.val('');
     }
   };
 
