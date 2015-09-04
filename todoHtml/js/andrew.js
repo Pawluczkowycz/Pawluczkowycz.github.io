@@ -75,7 +75,7 @@
         console.log('keypress function');
         todoAdd.submit();
         window.location =
-        "file:///C:/Users/Andrew/Desktop/Projects/ToDo%20Udemy%20App/index.html";
+        "https://pawluczkowycz.github.io/todoHtml/index.html";
       }       
     },
     submit: function() {
@@ -128,7 +128,7 @@
     clearTodos: function() { 
       localStorage.clear();
       window.location =
-        "file:///C:/Users/Andrew/Desktop/Projects/ToDo%20Udemy%20App/index.html";
+        "https://pawluczkowycz.github.io/todoHtml/index.html";
     }
   };
 
@@ -154,7 +154,7 @@
           todoEdit.capture();
           e.preventDefault();
           window.location =
-        "file:///C:/Users/Andrew/Desktop/Projects/ToDo%20Udemy%20App/index.html";
+        "https://pawluczkowycz.github.io/todoHtml/index.html";
         }
       });
     },
@@ -170,13 +170,11 @@
           
           localStorage.setItem('todos', JSON.stringify(todoEdit.todoStorage));
           window.location =
-        "file:///C:/Users/Andrew/Desktop/Projects/ToDo%20Udemy%20App/index.html";
+        "https://pawluczkowycz.github.io/todoHtml/index.html";
         }
       }
     },
     current: function() {
-      console.log('todoEdit.current fired');
-      
       todoEdit.currentName = $(this).find('a').data('todo_name'),
       todoEdit.currentDate = $(this).find('a').data('todo_date');
       
@@ -195,7 +193,7 @@
           
           localStorage.setItem('todos', JSON.stringify(todoEdit.todoStorage));
           window.location =
-        "file:///C:/Users/Andrew/Desktop/Projects/ToDo%20Udemy%20App/index.html";
+        "https://pawluczkowycz.github.io/todoHtml/index.html";
         }
       }
     }
