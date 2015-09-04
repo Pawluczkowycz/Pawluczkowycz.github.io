@@ -56,7 +56,7 @@
   var nyTimesLinks = {
     init: function() {
       this.myKey = '5fd8e8fa153a9766443971124d83123a:12:72810650';
-      this.$nytimesAddress = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=';
+      this.$nytimesAddress = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=';
       this.cacheDom();
     },
     cacheDom: function() {
@@ -87,7 +87,7 @@
   
   var wikiLinks = {
     init: function() {
-      this.$wikiAddress = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=';
+      this.$wikiAddress = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=';
       this.cacheDom();
     },
     cacheDom: function() {
