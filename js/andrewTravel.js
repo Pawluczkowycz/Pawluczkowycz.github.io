@@ -132,6 +132,5 @@ $imgSwap.on('click', function() {
   $(this).attr('src', $bigImgSource);
   $bigImg.attr('src', $thisSource);
         
-});
-      
+});  
 });
