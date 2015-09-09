@@ -16,21 +16,25 @@
     },
     bindEvents: function() {
       this.$submitBtn.on('click', function(e) {
-        e.preventDefault();        
+        e.preventDefault();
+        movingCompanion.clearImage();        
         var $streetInput = movingCompanion.getStreet();
-        var $cityInput = movingCompanion.getCity();
+        var $cityInput = movingCompanion.getCity();       
         googleStreet.render($streetInput, $cityInput);
         nyTimesLinks.getNytimes($streetInput, $cityInput);
         wikiLinks.getWiki($cityInput);
       });
-    },
-    render: function() {      
     },
     getStreet: function() {
       return this.$streetInput.val();
     },
     getCity: function() {
       return this.$cityInput.val();
+    },
+    clearImage: function() {
+      if ($('.streetview-image')) {
+        $('.streetview-image').remove();
+      }
     }
   };
   
@@ -67,6 +71,7 @@
     render: function(data) {
       var articles = '',
         articles = data.response.docs;
+        nyTimesLinks.$nytElem.empty();
         for (var i = 0; i < articles.length; i++) {
           var article = articles[i];
           nyTimesLinks.$nytElem.append('<li class="article">' +
@@ -96,6 +101,7 @@
     bindEvents: function() {      
     },
     render: function(data) {
+      this.$wikiElem.empty();
       for (var i = 0; i < data[1].length; i++) {
         this.$wikiElem.append('<li class="wiki-topics"><a href=' + data[3][i] + ' target="_blank">' + data[1][i] +'</a></li>');
       };
