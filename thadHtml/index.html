@@ -60,9 +60,9 @@
 				function showNextQuote() {
 					++$quoteIndex;
 					$quotes.eq($quoteIndex % $quotes.length)
-						.fadeIn(2000)
-						.delay(6000)
-						.fadeOut(3000, showNextQuote);
+						.fadeIn(1000)
+						.delay(2000)
+						.fadeOut(2000, showNextQuote);
 				}
 				
 				showNextQuote();
