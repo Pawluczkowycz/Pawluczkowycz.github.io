@@ -381,3 +381,9 @@ figcaption {
 	max-width: 400px;
 	width: 8.05%;
 }
+
+@media (max-width: 700px) {
+	.col-1-2 {	
+	width: 100%;
+	}
+}
