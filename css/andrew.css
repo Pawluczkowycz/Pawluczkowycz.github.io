@@ -259,6 +259,7 @@ figcaption {
 	font-family: 'Lato', sans-serif;
 	width: 100%;
 	text-align: center;
+	max-width: 600px;
 }
 
 .figure__overlay {
