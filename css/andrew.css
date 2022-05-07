@@ -271,6 +271,7 @@ figcaption {
 	opacity: 0;
 	position: absolute;
 	text-align: center;
+	max-width: 600px;
 }
 
 .figure__overlay-h3 {
